@@ -29,8 +29,8 @@ export default function Navbar() {
         link:"#contact"
     }
   ]
-  let menu:any = useRef()
-  let mobile:any = useRef()
+  let menu= useRef()
+  let mobile= useRef()
   useGSAP(()=>{
     let tl = gsap.timeline()
     tl.from("nav h1",{
