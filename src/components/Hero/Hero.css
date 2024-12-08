@@ -1,0 +1,119 @@
+#hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  .lefthome {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: aliceblue;
+  }
+  
+  .righthome {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .righthome img {
+    width: 60%;
+    max-width: 300px;
+    filter: drop-shadow(2px 2px 20px rgb(116, 201, 255));
+  }
+  
+  /* Text and Button Styling */
+  .homedetails {
+    font-size: 1.2rem;
+    max-width: 80%;
+  }
+  
+  .line1 {
+    font-size: 1em;
+  }
+  
+  .line2 {
+    background: linear-gradient(90deg, #20bcd7, white 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin: 10px 0;
+  }
+  
+  .line3 {
+    font-size: 1.2rem;
+  }
+  
+  .homedetails button {
+    padding: 10px 20px;
+    background-color: rgb(66, 180, 205);
+    color: black;
+    border: 2px solid rgb(66, 180, 205);
+    margin-top: 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  
+  .homedetails button:hover {
+    background-color: transparent;
+    color: aqua;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 750px) {
+    #hero {
+      flex-direction: column-reverse;
+      gap: 10px;
+    }
+  
+    .lefthome,
+    .righthome {
+      width: 100%;
+      height: auto;
+    }
+  
+    .lefthome {
+      height: 50vh;
+    }
+  
+    .righthome {
+      height: 50vh;
+      align-items: flex-end;
+    }
+  
+    .righthome img {
+      width: 80%;
+    }
+  
+    .homedetails {
+      font-size: 1rem;
+    }
+  
+    .line2 {
+      font-size: 2rem;
+    }
+  
+    .line3 {
+      font-size: 1rem;
+    }
+  
+    .homedetails button {
+      font-size: 0.9rem;
+    }
+  }
+  

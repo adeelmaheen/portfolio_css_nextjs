@@ -1,0 +1,30 @@
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+}
+.slider{
+    width: 90%;
+    height: 300px;
+    display: flex;align-items: center;
+    overflow-y:hidden;
+    overflow-x: scroll;
+    gap: 30px;
+    scrollbar-width:thin;
+    padding: 20px;
+    cursor: pointer;
+}
+#heading1{
+    font-size: 4vmax;
+    background: linear-gradient(90deg, #0c95c3, rgb(162, 223, 234) 70%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    text-align: center;
+}
